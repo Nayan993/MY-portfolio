@@ -1,0 +1,222 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(download.jpg);
+}
+
+#home {
+    color: white;
+    font-size: 30px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    gap:50px
+}
+
+#about {
+    color: white;
+}
+
+#skills {
+    color: white;
+}
+
+#projects {
+    color: white;
+}
+
+#contact {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.content h1{
+    margin-top: 80px;
+}
+
+.content ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    list-style: none;
+}
+
+.content ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.content ul a:hover {
+    color: blueviolet;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Change the color to your preference */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Change the hover color if needed */
+  }
+  
+header {
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: blueviolet;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: px;
+    margin-bottom: 30px;
+    margin-top: -95px;
+    text-decoration: underline;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.project {
+    margin-top: 40px;
+}
+
+.project h3 {
+    font-size: 24px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.project a {
+    color: white;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: blueviolet;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+.smallbuttons{
+    width:108px;
+    font-size: 12px;
+}
+
+#skills .content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Five columns */
+    gap: 20px;
+    padding-left: 150px;
+    padding-right: 90px;
+}
+
+#skills .content img {
+    width: 100px;
+    /* Ensure images don't exceed their container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    /* Navigation Styles */
+    nav ul li {
+        display: inline-block;
+        margin: 10px 0;
+    }
+    #home img{
+        width:150px;
+        height:200px;
+        margin-top: 80px;
+    }
+    #home,
+    #about,
+    #skills,
+    #projects,
+    #contact {
+        width: 120%;
+    }
+
+    /* Section Styles */
+    .section {
+        padding: 50px 20px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .section h2 {
+        font-size: 24px;
+        /* Reduce heading size for smaller screens */
+        margin-top: -80px;
+        /* Adjust top margin for smaller screens */
+    }
+
+    .section p {
+        font-size: 16px;
+        /* Reduce paragraph font size for smaller screens */
+    }
+
+    /* Project Styles */
+    .project h3 {
+        font-size: 20px;
+        /* Reduce project title font size for smaller screens */
+    }
+
+    /* Skills Section Styles */
+    #skills .content {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        /* Adjust grid columns for smaller screens */
+        padding-left: 10px;
+        /* Adjusted padding for responsiveness */
+        padding-right: 10px;
+        /* Adjusted padding for responsiveness */
+    }
+}
